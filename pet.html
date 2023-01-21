@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+
+    <!-- header section start  -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-paw"></i>shop</a>
+
+        <nav class="navbar text-capitalize">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#shop">shop</a>
+            <a href="#services">services</a>
+            <a href="#plan">plan</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <i class="fas fa-shopping-cart">
+                <span class="number-shop">0</span>
+            </i>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Sign in</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember-me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <div class="links">
+                <a href="#">forget password</a>
+                <a href="#">sign up</a>
+            </div>
+        </form>
+    </header>
+    <!-- header section end  -->
+
+    <!-- shop page start -->
+    <div class="shop-page">
+        <i class="fas fa-close close-page"></i>
+        <h1>Cart <span>Shop</span></h1>
+
+        <h2>No Product</h2>
+
+        <div class="total-price">Total: <span>0</span></div>
+    </div>
+    <!-- shop page end -->
+
+
+    <!-- home section start  -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3 data-aos="fade-up"><span>hi</span> welcome to our pet shop</h3>
+            <a data-aos="fade-up" href="#shop" class="btn">shop now</a>
+        </div>
+
+        <img src="image/bottom_wave.png" class="wave" alt="">
+    </section>
+    <!-- home section end  -->
+
+    <!-- about section start  -->
+    <section class="about" id="about" data-aos-once="true" data-aos="fade-right">
+        <div class="image">
+            <img src="image/about_img.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>premium <span>pet food </span>manufacture</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nostrum hic est quisquam temporibus dolor
+                libero alias corrupti? Delectus dolores nulla consectetur nihil aspernatur repudiandae quidem
+                exercitationem amet blanditiis minima!</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </section>
+    <!-- about section end  -->
+
+    <!-- dog and car food banner section start  -->
+    <div class="dog-food" data-aos-once="true" data-aos="fade-left">
+        <div class="image">
+            <img src="image/dog_food.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3><span>air dried</span> dog food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus ipsam quia repellat mollitia vero
+                obcaecati rerum. Laborum rerum architecto rem reprehenderit. Ratione ipsum sed provident! Officiis
+                voluptatum commodi harum.</p>
+            <div class="amount">$15.00 - %30.00</div>
+            <a href="#"><img src="image/shop_now_dog.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="cat-food" data-aos-once="true" data-aos="fade-right">
+        <div class="content">
+            <h3><span>air dried</span> cat food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minus ipsam quia repellat mollitia vero
+                obcaecati rerum. Laborum rerum architecto rem reprehenderit. Ratione ipsum sed provident! Officiis
+                voluptatum commodi harum.</p>
+            <div class="amount">$15.00 - %30.00</div>
+            <a href="#"><img src="image/shop_now_cat.png" alt=""></a>
+        </div>
+
+        <div class="image">
+            <img src="image/cat_food.png" alt="">
+        </div>
+    </div>
+    <!-- dog and car food banner section end  -->
+
+    <!-- shop section starts  -->
+    <section class="shop" id="shop">
+
+        <div class="overlay-img">
+            <i class="fas fa-close close"></i>
+            <div class="image">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <div class="message-heart">
+            <h1>Thanks For Liked This Product !</h1>
+        </div>
+
+        <h1 class="heading">our <span>shop</span></h1>
+
+        <div class="box-container">
+            <div class="box" data-aos="zoom-in" data-aos-once="true">
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="image">
+                    <img src="image/product_01.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>cat food</h3>
+                    <div class="amount">$15</div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="zoom-in" data-aos-once="true">
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="image">
+                    <img src="image/product_02.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>dog food</h3>
+                    <div class="amount">$30</div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="zoom-in" data-aos-once="true">
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="image">
+                    <img src="image/product_03.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>air-dried food</h3>
+                    <div class="amount">$20</div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="zoom-in" data-aos-once="true">
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="image">
+                    <img src="image/product_04.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>tiger food</h3>
+                    <div class="amount">$50</div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="zoom-in" data-aos-once="true">
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="image">
+                    <img src="image/product_05.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>lion food</h3>
+                    <div class="amount">$70</div>
+                </div>
+            </div>
+
+            <div class="box" data-aos="zoom-in" data-aos-once="true">
+                <div class="icons">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="image">
+                    <img src="image/product_06.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>chicken food</h3>
+                    <div class="amount">$10</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- shop section end  -->
+
+    <!-- services section starts  -->
+    <section class="services" id="services">
+        <h1 class="heading">our <span>services</span></h1>
+
+        <div class="box-container">
+            <div class="box" data-aos="fade-up" data-aos-once="true">
+                <i class="fas fa-dog"></i>
+                <h3>dog boarding</h3>
+                <button class="btn">read more</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis hic nam cupiditate
+                    omnis facere. Optio illum nihil doloremque voluptates quibusdam! Repellat beatae iusto dolores
+                    quisquam adipisci distinctio harum vel.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-once="true">
+                <i class="fas fa-cat"></i>
+                <h3>cat boarding</h3>
+                <button class="btn">read more</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis hic nam cupiditate
+                    omnis facere. Optio illum nihil doloremque voluptates quibusdam! Repellat beatae iusto dolores
+                    quisquam adipisci distinctio harum vel.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-once="true">
+                <i class="fas fa-bath"></i>
+                <h3>spa boarding</h3>
+                <button class="btn">read more</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis hic nam cupiditate
+                    omnis facere. Optio illum nihil doloremque voluptates quibusdam! Repellat beatae iusto dolores
+                    quisquam adipisci distinctio harum vel.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-once="true">
+                <i class="fas fa-drumstick-bite"></i>
+                <h3>healthy meal</h3>
+                <button class="btn">read more</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis hic nam cupiditate
+                    omnis facere. Optio illum nihil doloremque voluptates quibusdam! Repellat beatae iusto dolores
+                    quisquam adipisci distinctio harum vel.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-once="true">
+                <i class="fas fa-baseball-ball"></i>
+                <h3>activity exxercise</h3>
+                <button class="btn">read more</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis hic nam cupiditate
+                    omnis facere. Optio illum nihil doloremque voluptates quibusdam! Repellat beatae iusto dolores
+                    quisquam adipisci distinctio harum vel.</p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-once="true">
+                <i class="fas fa-heartbeat"></i>
+                <h3>health care</h3>
+                <button class="btn">read more</button>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus perferendis hic nam cupiditate
+                    omnis facere. Optio illum nihil doloremque voluptates quibusdam! Repellat beatae iusto dolores
+                    quisquam adipisci distinctio harum vel.</p>
+            </div>
+        </div>
+    </section>
+    <!-- services section end  -->
+
+    <!-- plan section start  -->
+    <section class="plan" id="plan">
+        <h1 class="heading">choose a <span>plan</span></h1>
+
+        <div class="box-container">
+            <div class="box" data-aos="flip-left" data-aos-once="true">
+                <h3 class="title">pet cares</h3>
+                <h3 class="day">1 day</h3>
+                <i class="fas fa-bicycle icon"></i>
+                <div class="list">
+                    <p>pet room <span class="fas fa-check"></span></p>
+                    <p>pet gromming <span class="fas fa-check"></span></p>
+                    <p>pet exercice <span class="fas fa-check"></span></p>
+                    <p>pet meals <span class="fas fa-check"></span></p>
+                </div>
+                <div class="amount"><span>$</span>50</div>
+                <a href="#" class="btn">choose plane</a>
+            </div>
+
+            <div class="box" data-aos="flip-left" data-aos-once="true">
+                <h3 class="title">pet cares</h3>
+                <h3 class="day">2 days</h3>
+                <i class="fas fa-motorcycle icon"></i>
+                <div class="list">
+                    <p>pet room <span class="fas fa-check"></span></p>
+                    <p>pet gromming <span class="fas fa-check"></span></p>
+                    <p>pet exercice <span class="fas fa-check"></span></p>
+                    <p>pet meals <span class="fas fa-check"></span></p>
+                </div>
+                <div class="amount"><span>$</span>350</div>
+                <a href="#" class="btn">choose plane</a>
+            </div>
+
+            <div class="box" data-aos="flip-left" data-aos-once="true">
+                <h3 class="title">pet cares</h3>
+                <h3 class="day">30 days</h3>
+                <i class="fas fa-car-side icon"></i>
+                <div class="list">
+                    <p>pet room <span class="fas fa-check"></span></p>
+                    <p>pet gromming <span class="fas fa-check"></span></p>
+                    <p>pet exercice <span class="fas fa-check"></span></p>
+                    <p>pet meals <span class="fas fa-check"></span></p>
+                </div>
+                <div class="amount"><span>$</span>650</div>
+                <a href="#" class="btn">choose plane</a>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- plan section end  -->
+
+    <section class="contact" id="contact">
+        <div class="image">
+            <img src="image/contact_img.png" alt="">
+        </div>
+
+        <form id="my-form" action="https://formspree.io/f/xwkjprjp" method="POST" data-aos="fade-up" data-aos-duration="1500">
+            <h3>contact us</h3>
+            <input type="text" placeholder="your name" class="box form-control">
+            <input type="email" placeholder="your email" class="box form-control" name="email">
+            <input type="number" placeholder="your number" class="box form-control">
+            <textarea name="Message" class="form-control" placeholder="your message" id="" cols="30" rows="10"></textarea>
+            <button id="my-form-button" type="submit" value="send message" class="btn">submit</button>
+        </form>
+    </section>
+
+    <section class="footer">
+        <img src="image/top_wave.png" alt="">
+
+        <div class="share" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <a href="#" class="btn"><i class="fab fa-facebook"></i>facebook</a>
+            <a href="#" class="btn"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#" class="btn"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#" class="btn"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#" class="btn"><i class="fab fa-pinterest"></i>pinterest</a>
+        </div>
+
+        <div class="credit">created by <span>mr. web developer</span> | all right reserved!</div>
+    </section>
+
+    <!-- Place this script at the end of the body tag -->
+    <!-- <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            delay: 100,
+            once: false,
+        });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
